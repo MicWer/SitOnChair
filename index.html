@@ -10,27 +10,36 @@
 
 <body>
     <header>
-        <a id="logo" href="#">SIT <span>ON</span> CHAIR</a>
+        <!-- header-->
+        <a id="logo" class="floatLeft" href="index.html">SIT <span>ON</span> CHAIR</a>
+        <!-- navigation menu-->
         <nav>
             <ul>
-                <li class="navButtons"><a href="#">kontakt<a/></li>
-                <li class="navButtons"><a href="#">galeria<a/></li>
-                <li class="navButtons"><a href="#">o firmie<a/>
-                    <div id="navList">
-                        <ul>
+                <li class="navButtons floatRight"><a href="#">kontakt<a/></li>
+                <li class="navButtons floatRight"><a href="#">galeria<a/></li>
+                <li class="navButtons floatRight" id="about"><a href="#">o firmie<a/>
+                    <!-- roll up list for nav menu-->
+                    <ul class="submenu">
+                        <div id="navList">
                             <li><a href="#">Aktualności<a/></li>
                             <li><a href="#">Nasz team<a/></li>
                             <li><a href="#">Historia<a/></li>
-                        </ul>
-                    </div>
+                        </div>
+                    </ul>
                 </li>
             </ul>
         </nav>
     </header>
     <section id="slider">
         <div class="container slider">
-            <div id="chair_box">
+            <div id="chairBox_slider" class="floatLeft">
                 <img src="images/black_chair.png"/>
+            </div>
+            <div id="textBox_slider" class="floatRight">
+                <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
+                <br>
+                <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.
+                </p>
             </div>
         </div>
     </section>

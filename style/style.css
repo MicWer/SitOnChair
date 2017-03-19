@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 /*
 @font-face {
@@ -15,20 +16,33 @@
 	font-style: normal;
 }
 */
-            /* general style */
+             /*general style */
 body {
     font-family: 'Raleway', sans-serif;
-}
-
-header {
-    background-color: black;
-    color: white;
 }
 
 header, footer {
     width: 100%;
     line-height: 40px;
     height: 40px;
+    position: fixed;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+
+header {
+    background-color: black;
+    color: white;
 }
 
 span {
@@ -40,7 +54,6 @@ span {
     text-decoration: none;
     font-weight: 700;
     color: white;
-    float: left;
 }
 
 nav>ul {
@@ -49,7 +62,6 @@ nav>ul {
 
 .navButtons, .navButtons:visited {
     display: inline-block;
-    float: right;
     padding: 0 30px 0 30px;
     text-transform: uppercase;
     text-align: center;
@@ -63,6 +75,10 @@ nav>ul {
 
 .navButtons>a:hover {
     border-bottom: 3px solid #23bba2;
+}
+
+#about:hover {
+
 }
 
 #navList {
@@ -79,10 +95,25 @@ nav>ul {
 
 #slider {
     height: 500px;
-    background: linear-gradient(180deg, white, grey);
+    background: linear-gradient(180deg,  rgba(255,255,255,1), rgba(237,237,237,0.7));
+    position: relative;
+    top: 40px;
 }
 
-#chair_box {
-    width: 400px;
-    height: 337px;
+.container, .slider {
+    height: 100%;
+}
+
+#chairBox_slider {
+    position: relative;
+    width: 600px;
+    top: 50px;
+}
+
+#textBox_slider {
+    position: relative;
+    width: 600px;
+    top: 100px;
+    text-align: center;
+    font-size: 1.5em;
 }
