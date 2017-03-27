@@ -5,50 +5,76 @@
     <meta charset="utf-8" name="description" content="Web Developer, Junior Frontend Developer, SEO, Copywriting, Webwriting, AIDA.">
     <title>Sit on Chair - Power Showoff Project</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <!-- header-->
-        <a id="logo" class="floatLeft" href="index.html">SIT <span>ON</span> CHAIR</a>
-        <!-- navigation menu-->
-        <nav>
-            <ul>
-                <li class="navButtons floatRight"><a href="#">kontakt<a/></li>
-                <li class="navButtons floatRight"><a href="#">galeria<a/></li>
-                <li class="navButtons floatRight" id="about"><a href="#">o firmie<a/>
-                    <!-- roll up list for nav menu-->
-                    <ul class="submenu">
-                        <div id="navList">
-                            <li><a href="#">Aktualności<a/></li>
-                            <li><a href="#">Nasz team<a/></li>
-                            <li><a href="#">Historia<a/></li>
-                        </div>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <div class="container header">
+            <a id="logo"  href="index.html">SIT <span>ON</span> CHAIR</a>
+            <!-- navigation menu-->
+            <nav>
+                <ul>
+                    <li class="navButtons"><a href="#">kontakt<a/></li>
+                    <li class="navButtons"><a href="#">galeria<a/></li>
+                    <li class="navButtons" id="about"><a href="#">o firmie<a/>
+                        <!-- pop up list for nav menu-->
+                        <ul class="submenu">
+                            <div id="hiddenList">
+                                <li><a href="#">Aktualności<a/></li>
+                                <li><a href="#">Nasz team<a/></li>
+                                <li><a href="#">Historia<a/></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section id="slider">
         <div class="container slider">
-            <div id="chairBox_slider" class="floatLeft">
+            <a id="arrowLeft" href="#"><</a>
+
+            <div id="chairBox_slider" >
                 <img src="images/black_chair.png"/>
             </div>
-            <div id="textBox_slider" class="floatRight">
+            <div id="textBox_slider" >
                 <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
                 <br>
                 <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.
                 </p>
+                <button id="buttonMore">Zobacz więcej</button>
             </div>
+            <a id="arrowRight" href="#">></a>
         </div>
     </section>
     <section id="products">
         <div class="container products">
+            <div class="productImg one">
+                <img src="images/box1_img.jpg" alt="Chair Clair">
+                <div id="product1_description"><p>Chair CLAIR</p></div>
+            </div>
+            <div class="productImg two">
+                <img src="images/box2_img.jpg" alt="Chair Margarita">
+                <div id="product2_description"><p>Chair MARGARITA</p></div>
+            </div>
+            <div class="productTxt">
+                <div id="txt_title"><p>Finds all inputs</p></div>
+                <div id="txt_paragraph">
+                    <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the ckeckboxes since no click have been linked</p>
+                    <br>
+                    <br>
+                    <p>Notice there is no change when clicking the ckeckboxes since no click events have been</p>
+                </div>
+            </div>
         </div>
     </section>
     <section id="offer">
         <div class="container offer">
+            <div id="offer_title"><p>cennik</p></div>
+            <div class="offer_box"></div>
+            <div class="offer_box"></div>
+            <div class="offer_box"></div>
         </div>
     </section>
     <section id="contact">
