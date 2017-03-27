@@ -31,7 +31,7 @@ header {
     height: 100%;
     width: 1200px;
     margin: 0 auto;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
                 /*HEADER STYLE*/
 .header {
@@ -239,7 +239,7 @@ span {
     height: 280px;
     float: left;
 }
-
+                    /*OFFER STYLES */
 .offer {
     height: 730px;
     padding: 20px 30px;
@@ -247,14 +247,17 @@ span {
 }
 
 #offer_title {
+    height: 35px;
     width: 330px;
     margin: 40px 24px;
+    border-bottom: 7px solid #24ba9f;
 }
 
 #offer_title p {
     padding-right: 100px;
     font-weight: 700;
-    border-bottom: 7px solid #24ba9f;
+    font-size: 1.2em;
+    color: grey;
     text-transform: uppercase;
 }
 
@@ -352,10 +355,35 @@ span {
     color: white;
     text-transform: uppercase;
 }
-
-
+                    /*CONTACT STYLES*/
 .contact {
     height: 550px;
+    padding: 30px;
+}
+.contact_title {
+    margin: 0 30px;
+    height: 35px;
+    width: 320px;
+    border-bottom: 7px solid #24ba9f;
+}
+.contact_title>p {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 20px;
+    color: grey;
+    text-transform: uppercase;
+}
+.contact_form {
+    margin-top: 20px;
+    width: 640px;
+    height: 400px;
+}
+input , textarea {
+    width: 600px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border: 1px solid #24ba9f;
 }
 footer {
     height: 80px;
