@@ -5,25 +5,26 @@
     <meta charset="utf-8" name="description" content="Web Developer, Junior Frontend Developer, SEO, Copywriting, Webwriting, AIDA.">
     <title>Sit on Chair - Power Showoff Project</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="js/script.js" rel="script"></script>
 </head>
 
 <body>
     <header>
-        <!-- header-->
+        <!-- HEADER SECTION -->
         <div class="container header">
             <a id="logo"  href="index.html">SIT <span>ON</span> CHAIR</a>
             <!-- navigation menu-->
             <nav>
                 <ul>
-                    <li class="navButtons"><a href="#">kontakt<a/></li>
-                    <li class="navButtons"><a href="#">galeria<a/></li>
+                    <li class="navButtons"><a href="#">kontakt</a></li>
+                    <li class="navButtons"><a href="#">galeria</a></li>
                     <li class="navButtons" id="about"><a href="#">o firmie<a/>
                         <!-- pop up list for nav menu-->
                         <ul class="submenu">
                             <div id="hiddenList">
-                                <li><a href="#">Aktualności<a/></li>
-                                <li><a href="#">Nasz team<a/></li>
-                                <li><a href="#">Historia<a/></li>
+                                <li><a href="#">Aktualności</a></li>
+                                <li><a href="#">Nasz team</a></li>
+                                <li><a href="#">Historia</a></li>
                             </div>
                         </ul>
                     </li>
@@ -31,12 +32,16 @@
             </nav>
         </div>
     </header>
+                                <!-- SLIDER SECTION -->
     <section id="slider">
         <div class="container slider">
             <a id="arrowLeft" href="#"><</a>
 
             <div id="chairBox_slider" >
-                <img src="images/black_chair.png"/>
+                <ul>
+                    <li><img class="slide_chair" src="images/black_chair.png"/>
+                    </li>
+                </ul>
             </div>
             <div id="textBox_slider" >
                 <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
@@ -48,7 +53,7 @@
             <a id="arrowRight" href="#">></a>
         </div>
     </section>
-                            <!--SLIDER SECTION-->
+                            <!--PRODUCTS SECTION-->
     <section id="products">
         <div class="container products">
             <div class="productImg one">
@@ -123,21 +128,38 @@
             <div class="contact_title">
                 <p>kontakt</p>
             </div>
-            <div class="contact_form">
-                <form>
+            <form>
+                <div class="contact_left">
                     <input type="text" name="name" minlength="6" placeholder="Imię">
                     <input type="email" name="email" required placeholder="Email">
-                    <textarea cols="30" rows="10" placeholder="Wiadomość"></textarea>
-                    <input type="checkbox" name="accept">
-                    <button>
-                        <input type="submit" name="wyślij" value="Wyślij">
+                    <textarea cols="30" rows="5" placeholder="Wiadomość"></textarea>
+                </div>
+                <div class="contact_right">
+                    <div class="contact_chair">
+                        <img src="images/red_chair.png">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="transport" required>
+                        <label for="transport">Zgadzam się na przetwarzanie danych osobowych</label>
+                    </div>
+                    <button class="button">
+                        <a href="#contact" type="submit">wyślij</a>
                     </button>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
+
     </section>
     <footer id="footer">
         <div class="container footer">
+            <p>Copyright 2017 | All Rights Reserved. - Sit On Chair</p>
+            <a id="logo"  href="index.html">SIT <span>ON</span> CHAIR</a>
+            <div class="footer_social_media">
+                <a href="http://flickr.com" rel="nofollow" target="_blank"><img src="images/flickr.png"></a>
+                <a href="http://vimeo.com" rel="nofollow" target="_blank"><img src="images/vimeo.png"></a>
+                <a href="http://pinterest.com" rel="nofollow" target="_blank"><img src="images/pinterest.png"></a>
+                <a href="http://twitter.com" rel="nofollow" target="_blank"><img src="images/twitter.png"></a>
+            </div>
         </div>
     </footer>
 </body>
