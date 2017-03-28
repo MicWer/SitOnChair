@@ -1,40 +1,44 @@
-jQuery(document).ready(function ($) {
+document.addEventListener("DOMContentLoaded", function (event) {
 
-    var slideCount = $('#chairBox_slider ul li').length;
-    var slideWidth = $('#chairBox_slider ul li').width();
-    var slideHeight = $('#chairBox_slider ul li').height();
-    var sliderUlWidth = slideCount * slideWidth;
+    var previousImg = document.getElementById("arrowLeft");
+    var nextImg = document.getElementById("arrowRight");
+    var chairs = document.querySelector(".slide_chair");
 
-    $('#chairBox_slider').css({ width: slideWidth, height: slideHeight });
+    var imgIndex = 0;
 
-    $('#chairBox_slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+    function roll() {
+        if (imgIndex < 0) {
+            imgIndex = 3;
+        } else if (imgIndex > 3) {
+            imgIndex = 0;
+        }
+    }
 
-    $('#chairBox_slider ul li:last-child').prependTo('#chairBox_slider ul');
+    function changeImg() {
+        if (imgIndex === 1) {
+            chairs.src = "images/black_chair.png";
+        } else if (imgIndex === 2) {
+            chairs.src = "images/wood_chair.png";
+        } else if (imgIndex === 3) {
+            chairs.src = "images/white_chair.png";
+        }
+    }
 
-    function moveLeft() {
-        $('#chairBox_slider ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $('#chairBox_slider ul li:last-child').prependTo('#chairBox_slider ul');
-            $('#chairBox_slider ul').css('left', '');
-        });
-    };
+    function change_roll() {
+        roll();
+        changeImg();
+    }
 
-    function moveRight() {
-        $('#chairBox_slider ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $('#chairBox_slider ul li:first-child').appendTo('#chairBox_slider ul');
-            $('#chairBox_slider ul').css('left', '');
-        });
-    };
+    function prev() {
+        imgIndex--;
+        change_roll();
+    }
 
-    $('a#arrowLeft').click(function () {
-        moveLeft();
-    });
+    function next() {
+        imgIndex++;
+        change_roll();
+    }
 
-    $('a#arrowRight').click(function () {
-        moveRight();
-    });
-
+    previousImg.addEventListener("click", prev());
+    nextImg.addEventListener("click", next());
 });

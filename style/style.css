@@ -6,17 +6,16 @@
 }
 
 @font-face {
-	font-family: 'Raleway';
-	src: url('../fonts/Raleway-Regular.eot');
-	src: local('Raleway'), local('Raleway-Regular'),
-		url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Raleway-Regular.woff') format('woff'),
-		url('../fonts/Raleway-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.eot');
+    src: local('Raleway'), local('Raleway-Regular'), url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Raleway-Regular.woff') format('woff'), url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-             /*GENERAL STYLES */
+
+/*GENERAL STYLES */
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -32,7 +31,10 @@ header {
     width: 1200px;
     margin: 0 auto;
 }
-                /*HEADER STYLE*/
+
+
+/*HEADER STYLE*/
+
 .header {
     background: black;
     margin: 0 auto;
@@ -52,9 +54,9 @@ span {
     color: #24ba9f;
 }
 
-.navButtons  {
+.navButtons {
     list-style-type: none;
-    margin: 0 20px ;
+    margin: 0 20px;
 }
 
 #hiddenList {
@@ -68,18 +70,21 @@ span {
     border-bottom: 0;
     position: absolute;
     color: white;
-    right: 22%;
+    right: 23%;
     top: 25px;
 }
+
 #hiddenList li>a, #hiddenList li>a:visited {
     text-decoration: none;
     color: white;
     font-weight: 500;
 }
+
 #hiddenList li {
     background-color: black;
     padding-left: 10px;
 }
+
 #hiddenList li:first-child {
     padding-top: 10px;
 }
@@ -87,6 +92,7 @@ span {
 #hiddenList li:last-child {
     padding-bottom: 8px;
 }
+
 #about:hover #hiddenList {
     display: block;
 }
@@ -97,7 +103,7 @@ span {
     text-decoration: none;
     text-transform: uppercase;
     float: right;
-    margin: 0 5px 0 5px;
+    margin: 0 10px;
     padding-top: 10px;
 }
 
@@ -109,7 +115,10 @@ span {
     transition-timing-function: ease-in-out;
     transition-delay: initial;
 }
-                    /*SLIDER STYLES*/
+
+
+/*SLIDER STYLES*/
+
 .slider {
     clear: both;
     height: 500px;
@@ -127,6 +136,7 @@ span {
     width: 50%;
     float: left;
 }
+
 #arrowLeft, #arrowLeft:visited {
     text-decoration: none;
     font-size: 5em;
@@ -135,6 +145,7 @@ span {
     left: 100px;
     color: #24ba9f;
 }
+
 #arrowRight, #arrowRight:visited {
     text-decoration: none;
     font-size: 5em;
@@ -153,14 +164,17 @@ span {
     text-align: center;
     top: 40px;
 }
+
 #textBox_slider h1 {
     font-size: 2em;
     font-weight: 700;
 }
+
 #textBox_slider p {
     text-align: center;
     padding: 0 20px 0 20px;
 }
+
 #buttonMore {
     margin-top: 30px;
     line-height: 50px;
@@ -172,53 +186,72 @@ span {
     background: #24ba9f;
     border-radius: 10px;
 }
-                    /*PRODUCT STYLES*/
+
+
+/*PRODUCT STYLES*/
+
 .products {
     height: 350px;
     position: relative;
     padding: 25px 40px;
     margin: 0 auto;
 }
+
 .productImg {
     margin: 0 10px;
     width: 350px;
     height: 250px;
     float: left;
 }
-.one img{
+
+.one img {
     width: 100%;
     height: 100%;
 }
-.two img{
+
+.two img {
     width: 100%;
     height: 100%;
 }
 
 #product1_description, #product2_description {
-     clear-after: both;
-     position: absolute;
-     width: 350px;
-     height: 50px;
-     bottom: 100px;
-     background-color: rgba(255, 255, 255, 0.5);
-     padding: 0 15px;
- }
+    clear-after: both;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0 15px;
+}
+
 #product1_description p, #product2_description p {
     margin-top: 10px;
     border-bottom: 7px solid #24ba9f;
     font-weight: 700;
     display: inline-block;
 }
+
 #product1_description p {
     padding-right: 50px;
 }
+
+.one:hover div {
+    display: none;
+}
+
+.two:hover div {
+    display: none;
+}
+
 .productTxt {
     padding: 20px;
 }
+
 #txt_title {
     width: 350px;
     height: 50px;
 }
+
 #txt_title>p {
     margin-top: 10px;
     border-bottom: 7px solid #24ba9f;
@@ -226,11 +259,13 @@ span {
     display: inline-block;
     padding-right: 50px;
 }
+
 #txt_paragraph p {
     font-size: 15px;
     color: darkgrey;
     line-break: loose;
 }
+
 .productTxt {
     margin: 0 10px;
     border: 2px solid grey;
@@ -238,7 +273,10 @@ span {
     height: 280px;
     float: left;
 }
-                    /*OFFER STYLES */
+
+
+/*OFFER STYLES */
+
 .offer {
     height: 730px;
     padding: 20px 30px;
@@ -291,8 +329,9 @@ span {
 }
 
 #lightened>.offer_includes>div {
-     background: lightgrey;
- }
+    background: lightgrey;
+}
+
 #lightened>.offer_includes>.light {
     background: #BABABA;
 }
@@ -312,6 +351,7 @@ span {
     left: 135px;
     top: -40px;
 }
+
 .offer_box_point_in {
     position: absolute;
     height: 30px;
@@ -321,6 +361,7 @@ span {
     top: 13px;
     left: 13px;
 }
+
 .offer_plan_name {
     text-transform: uppercase;
     text-align: center;
@@ -333,6 +374,7 @@ span {
     height: 180px;
     padding-top: 50px;
 }
+
 .offer_includes>div {
     text-align: center;
     font-size: 1.5em;
@@ -340,9 +382,11 @@ span {
     line-height: 35px;
     color: grey;
 }
+
 .offer_includes>.light {
     background: lightgrey;
 }
+
 .offer_box>button {
     position: absolute;
     bottom: 30px;
@@ -354,17 +398,22 @@ span {
     color: white;
     text-transform: uppercase;
 }
-                    /*CONTACT STYLES*/
+
+
+/*CONTACT STYLES*/
+
 .contact {
     height: 550px;
     padding: 30px;
 }
+
 .contact_title {
     margin: 0 30px;
     height: 35px;
     width: 320px;
     border-bottom: 7px solid #24ba9f;
 }
+
 .contact_title>p {
     font-size: 1.2em;
     font-weight: 700;
@@ -372,6 +421,7 @@ span {
     color: grey;
     text-transform: uppercase;
 }
+
 .contact_left {
     float: left;
     position: relative;
@@ -379,6 +429,7 @@ span {
     width: 640px;
     height: 400px;
 }
+
 form input, form textarea {
     width: 600px;
     height: 50px;
@@ -387,6 +438,7 @@ form input, form textarea {
     margin-left: 30px;
     border: 1px solid #24ba9f;
 }
+
 form textarea {
     height: 200px;
 }
@@ -402,6 +454,7 @@ form textarea {
     position: relative;
     padding: 0 30px 0 0;
 }
+
 .checkbox input {
     display: block;
     opacity: 0;
@@ -432,13 +485,14 @@ form textarea {
     width: 48px;
     top: 0;
 }
+
 .checkbox label::after {
     background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
     border: 0;
     display: none;
 }
 
-.checkbox input:checked + label::after {
+.checkbox input:checked+label::after {
     display: block;
 }
 
@@ -453,30 +507,38 @@ form textarea {
     border-radius: 10px;
     cursor: pointer;
 }
+
 .button a, .button a:visited {
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
-                                /* FOOTER STYLES */
+
+
+/* FOOTER STYLES */
+
 footer {
     height: 80px;
 }
+
 .footer {
     position: relative;
     height: 100%;
 }
+
 .footer p {
     float: left;
     margin: 30px;
     font-weight: 700;
     color: #cecece;
 }
+
 .footer .footer_social_media {
     float: right;
     width: 15%;
     padding: 20px 0;
 }
+
 .footer #logo {
     float: right;
     color: #cecece;
@@ -485,6 +547,7 @@ footer {
     margin: 15px 0 15px 0;
     padding-right: 50px;
 }
+
 .footer #logo span {
     font-weight: 700;
     color: #cecece;
