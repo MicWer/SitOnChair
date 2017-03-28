@@ -13,7 +13,6 @@
     font-style: normal;
 }
 
-
 /*GENERAL STYLES */
 
 body {
@@ -31,7 +30,6 @@ header {
     width: 1200px;
     margin: 0 auto;
 }
-
 
 /*HEADER STYLE*/
 
@@ -116,7 +114,6 @@ span {
     transition-delay: initial;
 }
 
-
 /*SLIDER STYLES*/
 
 .slider {
@@ -144,6 +141,7 @@ span {
     top: 200px;
     left: 100px;
     color: #24ba9f;
+    cursor: pointer;
 }
 
 #arrowRight, #arrowRight:visited {
@@ -153,6 +151,7 @@ span {
     top: 200px;
     right: 100px;
     color: #24ba9f;
+    cursor: pointer;
 }
 
 #textBox_slider {
@@ -273,7 +272,6 @@ span {
     height: 280px;
     float: left;
 }
-
 
 /*OFFER STYLES */
 
@@ -399,7 +397,6 @@ span {
     text-transform: uppercase;
 }
 
-
 /*CONTACT STYLES*/
 
 .contact {
@@ -513,7 +510,6 @@ form textarea {
     color: white;
     cursor: pointer;
 }
-
 
 /* FOOTER STYLES */
 

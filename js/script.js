@@ -1,44 +1,45 @@
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
 
-    var previousImg = document.getElementById("arrowLeft");
-    var nextImg = document.getElementById("arrowRight");
-    var chairs = document.querySelector(".slide_chair");
+    var prevImg = document.querySelector("#arrowLeft");
+    var nextImg = document.querySelector("#arrowRight");
+    var chairs = document.querySelector("#slide_chair");
 
-    var imgIndex = 0;
+    var imgCount = 0;
 
     function roll() {
-        if (imgIndex < 0) {
-            imgIndex = 3;
-        } else if (imgIndex > 3) {
-            imgIndex = 0;
+        if (imgCount < 0) {
+            imgCount = 3;
+        } else if (imgCount > 3) {
+            imgCount = 0;
         }
     }
 
     function changeImg() {
-        if (imgIndex === 1) {
+        if (imgCount == 1) {
             chairs.src = "images/black_chair.png";
-        } else if (imgIndex === 2) {
+        } else if (imgCount == 2) {
             chairs.src = "images/wood_chair.png";
-        } else if (imgIndex === 3) {
+        } else if (imgCount == 3) {
             chairs.src = "images/white_chair.png";
         }
     }
 
     function change_roll() {
-        roll();
         changeImg();
+        roll();
+        console.log(imgCount);
     }
 
     function prev() {
-        imgIndex--;
+        imgCount -= 1;
         change_roll();
     }
 
     function next() {
-        imgIndex++;
+        imgCount += 1;
         change_roll();
     }
 
-    previousImg.addEventListener("click", prev());
-    nextImg.addEventListener("click", next());
+    prevImg.addEventListener("click", prev);
+    nextImg.addEventListener("click", next);
 });
