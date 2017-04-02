@@ -355,6 +355,10 @@ span {
     background: white;
     color: #24ba9f;
 }
+#lightened>button>a, #lightened>button>a:visited {
+    text-decoration: none;
+    color: #24ba9f;
+}
 
 .offer_box_point_out {
     position: absolute;
@@ -412,6 +416,10 @@ span {
     background: #24ba9f;
     color: white;
     text-transform: uppercase;
+}
+.offer_box>button>a {
+    text-decoration: none;
+    color: white;
 }
 
 /*CONTACT STYLES*/
