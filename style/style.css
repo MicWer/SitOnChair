@@ -76,7 +76,7 @@ span {
     content: "";
     position: absolute;
     left: 50px;
-    top: 15px;
+    top: 13px;
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
@@ -196,6 +196,11 @@ span {
     color: white;
     background: #24ba9f;
     border-radius: 10px;
+}
+
+#buttonMore a, #buttonMore a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 

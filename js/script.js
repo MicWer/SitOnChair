@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function changeImg() {
-        if (imgCount == 1) {
+        if (imgCount === 1) {
             chairs.src = "images/black_chair.png";
-        } else if (imgCount == 2) {
+        } else if (imgCount === 2) {
             chairs.src = "images/wood_chair.png";
-        } else if (imgCount == 3) {
+        } else if (imgCount === 3) {
             chairs.src = "images/white_chair.png";
         }
     }
