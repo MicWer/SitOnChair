@@ -24,13 +24,14 @@ header {
     position: fixed;
     z-index: 100;
     background: black;
-
 }
 
 .container {
     height: 100%;
     width: 1200px;
     margin: 0 auto;
+    position: relative;
+
 }
 
 /*HEADER STYLE*/
@@ -128,22 +129,20 @@ span {
 
 /*SLIDER STYLES*/
 
-.slider {
+#slider {
     clear: both;
     height: 500px;
-    padding-top: 100px;
-    padding-right: 150px;
-    padding-left: 150px;
     background: linear-gradient(180deg, white, #c7c5c7);
     position: relative;
-    margin: 0 auto;
+    width: 100%;
 }
 
 #chairBox_slider {
     position: relative;
-    padding-left: 25px;
-    width: 50%;
+    width: 500px;
     float: left;
+    top: 100px;
+    left: 150px;
 }
 
 #arrowLeft, #arrowLeft:visited {
@@ -154,6 +153,7 @@ span {
     left: 100px;
     color: #24ba9f;
     cursor: pointer;
+    z-index:2;
 }
 
 #arrowRight, #arrowRight:visited {
@@ -164,6 +164,7 @@ span {
     right: 100px;
     color: #24ba9f;
     cursor: pointer;
+    z-index:2;
 }
 
 #textBox_slider {
@@ -171,9 +172,10 @@ span {
     padding-right: 50px;
     float: right;
     position: relative;
-    width: 50%;
+    width: 500px;
     text-align: center;
-    top: 40px;
+    top: 140px;
+    right: 150px;
 }
 
 #textBox_slider h1 {
