@@ -23,6 +23,8 @@ header {
     width: 100%;
     position: fixed;
     z-index: 100;
+    background: black;
+
 }
 
 .container {
@@ -34,8 +36,6 @@ header {
 /*HEADER STYLE*/
 
 .header {
-    background: black;
-    margin: 0 auto;
     height: 40px;
 }
 
@@ -68,7 +68,7 @@ span {
     border-bottom: 0;
     position: absolute;
     color: white;
-    right: 23%;
+    right: 200px;
     top: 25px;
 }
 
