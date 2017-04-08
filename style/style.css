@@ -208,7 +208,7 @@ span {
 
 /*PRODUCT STYLES*/
 
-.products {
+#products {
     height: 350px;
     position: relative;
     padding: 25px 40px;
@@ -294,10 +294,11 @@ span {
 
 /*OFFER STYLES */
 
-.offer {
+#offer {
     height: 730px;
     padding: 20px 30px;
     background: #E2E2E2;
+    width: 100%;
 }
 
 #offer_title {
@@ -313,6 +314,7 @@ span {
     font-size: 1.2em;
     color: grey;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .offer_box {
@@ -324,6 +326,16 @@ span {
     position: relative;
     padding-top: 50px;
     background: #f1f1f1;
+}
+
+.offer_box_circle {
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #24ba9f;
+    background-color: white;
+    margin: 0 auto;
 }
 
 #lightened {
