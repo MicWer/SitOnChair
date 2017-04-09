@@ -90,6 +90,14 @@ span {
     color: white;
     font-weight: 500;
 }
+#hiddenList li>a:hover {
+    border-bottom: 2px solid #24ba9f;
+    transition: all 100ms ease-in-out;
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+}
 
 #hiddenList li {
     background-color: black;
@@ -329,50 +337,39 @@ span {
 }
 
 .offer_box_circle {
-
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 2px solid #24ba9f;
+    border: 2px solid grey;
     background-color: white;
     margin: 0 auto;
+    position: relative;
 }
 
-#lightened {
-    background: #24ba9f;
-    border: 2px solid #24ba9f;
+.offer_box_circle .price {
+    position: relative;
+    top: 25px;
+    left: 20px;
+    font-size: 2em;
 }
 
-#light_in {
-    background: white;
-}
-
-#light_out {
-    background: #24ba9f;
-    border: 0;
-}
-
-#lightened>p {
-    background: #24ba9f;
-    color: white;
-}
-
-#lightened>.offer_includes>div {
-    background: lightgrey;
-}
-
-#lightened>.offer_includes>.light {
-    background: #BABABA;
-}
-
-#lightened>button {
-    background: white;
+.offer_box_circle p {
     color: #24ba9f;
+    background: white;
+    text-align: center;
+    font-weight: 700;
+    width: 80px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
 }
-#lightened>button>a, #lightened>button>a:visited {
-    text-decoration: none;
-    color: #24ba9f;
+
+.offer_box_circle p span {
+    vertical-align: top;
+    font-size: 0.5em;
 }
+
+
 
 .offer_box_point_out {
     position: absolute;
@@ -434,6 +431,46 @@ span {
 .offer_box>button>a {
     text-decoration: none;
     color: white;
+}
+
+.offer_box:hover {
+    background: #24ba9f;
+    border: 2px solid #24ba9f;
+}
+
+.offer_box:hover .offer_box_point_in {
+    background: white;
+}
+
+.offer_box:hover .offer_box_point_out {
+    background: #24ba9f;
+    border: 0;
+}
+
+.offer_box:hover > p {
+    background: #24ba9f;
+    color: white;
+}
+
+.offer_box:hover>.offer_includes>div {
+    background: lightgrey;
+}
+
+.offer_box:hover>.offer_includes>.light {
+    background: #BABABA;
+}
+
+.offer_box:hover>button {
+    background: white;
+    color: #24ba9f;
+}
+.offer_box:hover>button>a, .offer_box:hover>button>a:visited {
+    text-decoration: none;
+    color: #24ba9f;
+}
+
+.offer_box:hover .offer_box_circle {
+    border: 2px solid #24ba9f;
 }
 
 /*CONTACT STYLES*/

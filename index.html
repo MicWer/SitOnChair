@@ -8,16 +8,16 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
     <!-- HEADER SECTION -->
         <div class="container header">
             <a id="logo" href="index.html">SIT <span>ON</span> CHAIR</a>
             <!-- navigation menu-->
             <nav>
                 <ul>
-                    <li class="navButtons"><a href="#">kontakt</a></li>
-                    <li class="navButtons"><a href="#">galeria</a></li>
-                    <li class="navButtons" id="about"><a href="#">o firmie<a/>
+                    <li class="navButtons"><a href="#contact">kontakt</a></li>
+                    <li class="navButtons"><a href="#products">galeria</a></li>
+                    <li class="navButtons" id="about"><a href="#slider">o firmie<a/>
                         <!-- pop up list for nav menu-->
                         <ul id="hiddenList">
                             <li><a href="#">Aktualności</a></li>
@@ -32,7 +32,7 @@
     <!-- SLIDER SECTION -->
     <section id="slider">
         <div class="container">
-            <a id="arrowLeft" class=".goLeft" href="#"><</a>
+            <a id="arrowLeft" class=".goLeft" href="#slider"><</a>
             <div id="chairBox_slider">
                 <img id="slide_chair" src="images/black_chair.png" />
             </div>
@@ -41,9 +41,9 @@
                 <br>
                 <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.
                 </p>
-                <button id="buttonMore"><a href="#">Zobacz więcej</a></button>
+                <button id="buttonMore"><a href="#slider">Zobacz więcej</a></button>
             </div>
-            <a id="arrowRight" href="#">></a>
+            <a id="arrowRight" href="#slider">></a>
         </div>
     </section>
     <!--PRODUCTS SECTION-->
@@ -88,28 +88,31 @@
                 <br>
 
                 <div class="offer_box_circle">
-                    <p><span></span></p>
-                    <p><span></span></p>
+                    <p class="price">85<span>99</span></p>
+                    <p>PLN/MSC</p>
                 </div>
                 <div class="offer_includes">
                     <div>Zakup towaru + dowóz</div>
                     <div class="light">Serwis</div>
                 </div>
-                <button><a href="#">dołącz</a></button>
+                <button><a href="#offer">dołącz</a></button>
             </div>
-            <div class="offer_box" id="lightened">
+            <div class="offer_box" >
                 <div class="offer_box_point_out" id="light_out">
                     <div class="offer_box_point_in" id="light_in"></div>
                 </div>
                 <p class="offer_plan_name">standard plan</p>
                 <br>
-                <div class="offer_box_circle"></div>
+                <div class="offer_box_circle">
+                    <p class="price">95<span>99</span></p>
+                    <p>PLN/MSC</p>
+                </div>
                 <div class="offer_includes">
                     <div>Zakup towaru + dowóz</div>
                     <div class="light">Serwis</div>
                     <div>Gwarancja 5 lat</div>
                 </div>
-                <button><a href="#">dołącz</a></button>
+                <button><a href="#offer">dołącz</a></button>
             </div>
             <div class="offer_box">
                 <div class="offer_box_point_out">
@@ -117,14 +120,17 @@
                 </div>
                 <p class="offer_plan_name">advance plan</p>
                 <br>
-                <div class="offer_box_circle"></div>
+                <div class="offer_box_circle">
+                    <p class="price">215<span>99</span></p>
+                    <p>PLN/MSC</p>
+                </div>
                 <div class="offer_includes">
                     <div>Zakup towaru + dowóz</div>
                     <div class="light">Serwis</div>
                     <div>Gwarancja 5 lat</div>
                     <div class="light">Porady projektanta</div>
                 </div>
-                <button><a href="#">dołącz</a></button>
+                <button><a href="#offer">dołącz</a></button>
             </div>
         </div>
     </section>
@@ -163,7 +169,7 @@
     <footer id="footer">
         <div class="container footer">
             <p>Copyright 2017 | All Rights Reserved. - Sit On Chair</p>
-            <a id="logo" href="index.html">SIT <span>ON</span> CHAIR</a>
+            <a id="logo" href="#header">SIT <span>ON</span> CHAIR</a>
             <div class="footer_social_media">
                 <a href="http://flickr.com" rel="nofollow" target="_blank"><img src="images/flickr.png"></a>
                 <a href="http://vimeo.com" rel="nofollow" target="_blank"><img src="images/vimeo.png"></a>
