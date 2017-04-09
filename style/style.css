@@ -438,7 +438,7 @@ span {
 
 /*CONTACT STYLES*/
 
-.contact {
+#contact {
     height: 550px;
     padding: 30px;
 }
@@ -548,6 +548,18 @@ form textarea {
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+
+.error, .success {
+    float: right;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
 }
 
 /* FOOTER STYLES */

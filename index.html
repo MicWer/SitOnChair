@@ -130,15 +130,19 @@
     </section>
     <!--CONTACT SECTION-->
     <section id="contact">
-        <div class="container contact">
+        <div class="container">
             <div class="contact_title">
                 <p>kontakt</p>
             </div>
             <form>
                 <div class="contact_left">
-                    <input type="text" name="name" minlength="6" placeholder="Imię">
-                    <input type="email" name="email" required placeholder="Email">
-                    <textarea cols="30" rows="5" placeholder="Wiadomość"></textarea>
+                    <input id="name" type="text" name="name" placeholder="Imię">
+                    <input id="email" type="email" name="email" required placeholder="Email">
+                    <textarea id="text"  rows="5" placeholder="Wiadomość"></textarea>
+                    <div class="error">
+                    </div>
+                    <div class="success">
+                    </div>
                 </div>
                 <div class="contact_right">
                     <div class="contact_chair">
