@@ -1,33 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    // SLIDER
     var prevImg = document.querySelector("#arrowLeft");
     var nextImg = document.querySelector("#arrowRight");
     var chairs = document.querySelector("#slide_chair");
 
-    var imgCount = 0;
-
+    var imgCount = 1;
+    //IMAGE COUNTER
     function roll() {
-        if (imgCount < 0) {
+        if (imgCount < 1) {
             imgCount = 3;
         } else if (imgCount > 3) {
-            imgCount = 0;
+            imgCount = 1;
         }
     }
-
+    //IMAGE SELECTOR
     function changeImg() {
-        if (imgCount === 1) {
+        if (imgCount == 1) {
             chairs.src = "images/black_chair.png";
-        } else if (imgCount === 2) {
-            chairs.src = "images/wood_chair.png";
-        } else if (imgCount === 3) {
-            chairs.src = "images/white_chair.png";
+        } else if (imgCount == 2) {
+            chairs.src = "images/red_chair.png";
+        } else if (imgCount == 3) {
+            chairs.src = "images/orange_chair.png";
         }
     }
 
     function change_roll() {
         changeImg();
         roll();
-        console.log(imgCount);
     }
 
     function prev() {

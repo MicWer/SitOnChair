@@ -26,6 +26,15 @@ header {
     background: black;
 }
 
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    transition: transform 500ms;
+    transform: scale(1.2,1.2);
+}
+
 .container {
     height: 100%;
     width: 1200px;
@@ -91,12 +100,7 @@ span {
     font-weight: 500;
 }
 #hiddenList li>a:hover {
-    border-bottom: 2px solid #24ba9f;
-    transition: all 100ms ease-in-out;
-    transition-property: all;
-    transition-duration: 100ms;
-    transition-timing-function: ease-in-out;
-    transition-delay: initial;
+    border-bottom: 3px solid #24ba9f;
 }
 
 #hiddenList li {
@@ -128,11 +132,6 @@ span {
 
 .navButtons>a:hover {
     border-bottom: 3px solid #24ba9f;
-    transition: all 100ms ease-in-out;
-    transition-property: all;
-    transition-duration: 100ms;
-    transition-timing-function: ease-in-out;
-    transition-delay: initial;
 }
 
 /*SLIDER STYLES*/
@@ -151,6 +150,10 @@ span {
     float: left;
     top: 100px;
     left: 150px;
+}
+#chairBox_slider img {
+    width: 470px;
+    height: 337px;
 }
 
 #arrowLeft, #arrowLeft:visited {
@@ -228,14 +231,10 @@ span {
     width: 350px;
     height: 250px;
     float: left;
+    overflow: hidden;
 }
 
-.one img {
-    width: 100%;
-    height: 100%;
-}
-
-.two img {
+.one img, .two img {
     width: 100%;
     height: 100%;
 }
@@ -261,12 +260,9 @@ span {
     padding-right: 50px;
 }
 
-.one:hover div {
-    display: none;
-}
-
-.two:hover div {
-    display: none;
+.one:hover div, .two:hover div {
+    transition: transform 500ms;
+    transform: translateY(100px);
 }
 
 .productTxt {
